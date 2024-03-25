@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<!-- saved from url=(0066)file:///C:/Users/Marise%20Miranda/Downloads/Marises%20Machine.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+        <h1>Dump Machine</h1>
+        <br>
+        <br>
+<div>
+        <h3>Decimal</h3>
+        <input id="demo1" type="text" placeholder="Digite o valor em decimal">
+
+        <br>
+        <br>
+
+        <h2>converter para:</h2>
+
+        <span class="nada";>Octal</span>
+        <input class= "mer"onclick="aparecer_octal()" type="checkbox">
+        <br>
+
+        <div class="octal"; id="demo2"></div>
+
+        <br>
+        <br>
+
+        <span class="nada";>Hexadecimal</span>
+        <input class= "mer" onclick="aparecer_hexa()" type="checkbox">
+
+        <br>
+
+        <div class="hexa"; id="demo3"></div>
+        
+        <br>
+        <br>
+
+        <span class="nada";>Binário</span>
+        <input onclick="aparecer_bin()" type="checkbox">
+        
+        <br>
+
+        <div class="bi"; id="demo4"></div>
+
+        <br>
+        <br>
+
+        <button class="corzinha" onclick="converter()">Converter</button>
+</div>
+
+</body>
+</html>
+
+<script>
+        function converter() {
+            
+        var decimal = Number (demo1.value);
+        
+        let octal = decimal.toString(8);
+        
+        let hexadecimal = decimal.toString(16);
+        
+        let binaria = decimal.toString(2);
+        
+        console.log (decimal);
+        console.log (octal);
+        console.log (hexadecimal);
+        console.log (binaria);
+        
+        document.getElementById("demo1").innerHTML = ` ${decimal}`;
+        document.getElementById("demo2").innerHTML = ` ${octal}`;
+        document.getElementById("demo3").innerHTML = ` ${hexadecimal}`;
+        document.getElementById("demo4").innerHTML = ` ${binaria}`;
+        
+        
+        }
+        
+        function aparecer_bin() {
+            demo4.style.display = 'block'
+        }
+        
+        function aparecer_hexa() {
+            demo3.style.display = 'block'
+        }
+        
+        function aparecer_octal() {
+            demo2.style.display = 'block'
+        }
+        document.bgColor = "#00ffff";
+        
+</script>

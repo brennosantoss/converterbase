@@ -1,0 +1,61 @@
+body {
+    background-color: red;
+}
+
+h1 {
+    color: white;
+}
+
+h2 {
+    color: white;
+}
+
+h3 {
+    color: white;
+}
+
+.mer {
+    background-color: white;
+}
+
+.nada {
+    color: white;
+}
+
+.corzinha {
+    background-color: black;
+    color: white 
+}
+
+.octal {
+    display: none; 
+    background-color: #dcdcdc; 
+    border-radius: 5px; 
+    padding: 5px; 
+    color: rgb(0, 0, 0); 
+    width: 15%; 
+    height: 40px; 
+    font-weight: 500;
+}
+
+.hexa {
+    display: none; 
+    background-color: #dcdcdc; 
+    border-radius: 5px; 
+    padding: 5px; 
+    color: rgb(7, 7, 7); 
+    width: 15%; 
+    height: 40px; 
+    font-weight: 500;
+}
+
+.bi {
+    display: none; 
+    background-color: #dcdcdc; 
+    border-radius: 5px; 
+    padding: 5px; 
+    color: rgb(5, 5, 5); 
+    width: 60%; 
+    height: 50px; 
+    font-weight: 500;
+}
